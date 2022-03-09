@@ -1,0 +1,31 @@
+{
+  "name": "d-lido-front-end",
+  "version": "1.0.0",
+  "description": "Hotel D'Lido Front end project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hotel-D-Lido/d-lido-front-end.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hotel-D-Lido/d-lido-front-end/issues"
+  },
+  "homepage": "https://github.com/Hotel-D-Lido/d-lido-front-end#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "nodemonConfig": {
+    "ext": "js,html"
+  }
+}
