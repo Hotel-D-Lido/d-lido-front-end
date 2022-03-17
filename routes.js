@@ -1,15 +1,20 @@
-const express = require("express");
-const router = express.Router();
-const path = require("path");
+const express = require('express')
+const router = express.Router()
+const path = require('path')
 
 /* Home page */
-router.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "views/index.html"));
-});
+router.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views/index.html'))
+})
 
 /* About page */
-router.get("/about", (req, res) => {
-  res.sendFile(path.join(__dirname, "views/about.html"));
-});
+router.get('/about', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views/about.html'))
+})
 
-module.exports = router;
+/* Register page */
+router.get('/register', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views/register.html'))
+})
+
+module.exports = router
