@@ -22,4 +22,9 @@ router.get('/login', (req, res) => {
   res.sendFile(path.join(__dirname, 'views/login.html'))
 })
 
+/* Rooms List page */
+router.get('/rooms', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views/rooms.html'))
+})
+
 module.exports = router
