@@ -10,7 +10,7 @@
             </div>
             <div class="card-footer">
               <button type="button" class="btn btn-secondary">Ver más</button>
-              <button type="button" class="btn btn-primary">Reservar</button>
+              <a type="button" href="/rooms/${room.room_id}/book" target="_self" class="btn btn-primary">Reservar</a>
               <small class="text-muted">$${category.price}/PP/PN</small>
             </div>
         </div>

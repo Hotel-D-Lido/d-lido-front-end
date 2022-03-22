@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const path = require('path')
+const authorizationMiddleware = require('./middlewares/authorization.middleware')
 
 /* Home page */
 router.get('/', (req, res) => {
@@ -25,6 +26,11 @@ router.get('/login', (req, res) => {
 /* Rooms List page */
 router.get('/rooms', (req, res) => {
   res.sendFile(path.join(__dirname, 'views/rooms.html'))
+})
+
+/* Booking page */
+router.get('/rooms/:room_id/book', authorizationMiddleware, (req, res) => {
+  res.sendFile(path.join(__dirname, 'views/booking.html'))
 })
 
 module.exports = router
