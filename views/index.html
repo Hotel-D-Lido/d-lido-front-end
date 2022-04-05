@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel D Lido</title>
+
+    <link href="../public/favicon.ico" rel="icon" type="image/x-icon" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playball"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../public/styles/normalize.css" />
+    <link rel="stylesheet" href="../public/styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Hotel D Lido</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container">
+              <div class="row justify-content-end">
+                <div class="col-4">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Inicio</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/rooms">Habitaciones</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/rooms/:room_id/book">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/login">Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/register">Registrar</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div
+          id="carouselExampleFade"
+          class="margen carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="../public/images/habitaciones/habitacion 1.jpg"
+                width="620"
+                height="450"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../public/images/habitaciones/habitacion 2.jpg"
+                width="620"
+                height="450"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../public/images/habitaciones/habitacion 3.jpg"
+                width="620"
+                height="450"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <center><h2 class="margen">Categorías</h2></center>
+        <div class="margen row justify-content-evenly">
+          <div class="col-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="../public/images/iconos_cat/alta.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Habitaciones de lujo</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="d-grid gap-2">
+                  <a class="btn btn-primary" href="/rooms" type="button">Ver mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="../public/images/iconos_cat/media.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Habitaciones regulares</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="d-grid gap-2">
+                  <a class="btn btn-primary" href="/rooms" type="button">Ver mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem">
+              <img
+                src="../public/images/iconos_cat/baja.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Habitaciones normales</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="d-grid gap-2">
+                  <a class="btn btn-primary" href="/rooms" type="button">Ver mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <center><h2 class="margen">Servicios</h2></center>
+        <div class="margen row justify-content-evenly">
+          <div class="col-6">
+            <img
+              src="../public/images/servicios/servicio1.jpg"
+              alt="servicio de comida"
+            />
+          </div>
+          <div class="col-5">
+            <img
+              src="../public/images/servicios/servisios2.jpg"
+              width="450"
+              alt="servicio de comida"
+            />
+
+            <img
+              src="../public/images/servicios/granadaH.jpg"
+              width="450"
+              height="200"
+              alt="servicio de comida"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="page-footer bg-dark text-white">
+      <p class="text-center">
+        <a href="#wrapper" class="gototop"
+          ><i class="fa fa-angle-double-up fa-2x"></i
+        ></a>
+      </p>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-4">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <center><h4>Historia del hotel</h4></center>
+                </div>
+                <div class="col-12">
+                  <p class="texto-justificado">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellendus quos deserunt cumque praesentium tempora, non
+                    vero ullam consequuntur saepe provident, quibusdam tempore
+                    dolorum dolores aperiam numquam asperiores neque ex. Est.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellendus quos deserunt cumque praesentium tempora, non
+                    vero ullam consequuntur saepe provident, quibusdam tempore
+                    dolorum dolores aperiam numquam asperiores neque ex. Est.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <center><h4>Dirección</h4></center>
+                </div>
+                <div class="col-12">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.130553198947!2d-86.33806768587279!3d12.1032138366126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f71547843ff8c65%3A0xeb8d4cc1b713e9b0!2sAuto%20Hotel%20Las%20Brisas!5e0!3m2!1ses!2sni!4v1649039649100!5m2!1ses!2sni"
+                    width="400"
+                    height="300"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-4">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <center><h4>Datos de contacto</h4></center>
+                </div>
+                <div class="col-12">
+                  <center>
+                    <ul>
+                      <label for="text">Dirección</label>
+                      <li>Racachaca 1 al lago, por el arbolito del bolo.</li>
+                    </ul>
+  
+                    <ul>
+                      <label for="text">Teléfono</label>
+                      <li>22334444</li>
+                    </ul>
+  
+                    <ul>
+                      <label for="text">Correo</label>
+                      <li>HotelLido@gmail.com</li>
+                    </ul>
+                  </center>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="row justify-content-between">
+          <div class="col-5">
+            <p>&copy; Hotel Lido.</p>
+          </div>
+          <div class="col-6">
+            <div class="row justify-content-end">
+              <div class="col-4">
+                <div class="row justify-content-end">
+                  <div class="col-4">
+                    <i class="bi bi-whatsapp"></i>
+                  </div>
+                  <div class="col-4">
+                    <i class="bi bi-twitter"></i>
+                  </div>
+                  <div class="col-4">
+                    <i class="bi bi-facebook"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+<style scoped>
+  .margen {
+    margin-top: 30px;
+  }
+  .letra {
+    font: oblique bold 190% cursive;
+  }
+  .boton {
+    font-size: larger;
+  }
+  .texto-justificado {
+    text-align: justify;
+  }
+</style>
