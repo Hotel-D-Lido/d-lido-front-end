@@ -1,15 +1,15 @@
 <template>
-  <inicio />
+  <Juridica />
 </template>
 
 <script>
-  import inicio from '../components/inicio.vue';
+  import Juridica from '../components/cuentaJuridica.vue';
 
   export default {
     name: 'Home',
 
     components: {
-      inicio,
+      Juridica,
     },
   }
 </script>

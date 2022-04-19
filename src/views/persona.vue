@@ -1,15 +1,15 @@
 <template>
-  <inicio />
+  <persona />
 </template>
 
 <script>
-  import inicio from '../components/inicio.vue';
+  import persona from '../components/cuentaPersona.vue';
 
   export default {
     name: 'Home',
 
     components: {
-      inicio,
+      persona,
     },
   }
 </script>

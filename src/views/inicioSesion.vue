@@ -1,15 +1,15 @@
 <template>
-  <inicio />
+  <login />
 </template>
 
 <script>
-  import inicio from '../components/inicio.vue';
+  import login from '../components/login.vue';
 
   export default {
     name: 'Home',
 
     components: {
-      inicio,
+      login,
     },
   }
 </script>

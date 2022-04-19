@@ -1,15 +1,15 @@
 <template>
-  <inicio />
+  <habitaciones />
 </template>
 
 <script>
-  import inicio from '../components/inicio.vue';
+  import habitaciones from '../components/habitaciones.vue';
 
   export default {
     name: 'Home',
 
     components: {
-      inicio,
+      habitaciones,
     },
   }
 </script>

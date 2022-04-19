@@ -1,15 +1,15 @@
 <template>
-  <inicio />
+  <reserva />
 </template>
 
 <script>
-  import inicio from '../components/inicio.vue';
+  import reserva from '../components/reservaHabitacion.vue';
 
   export default {
     name: 'Home',
 
     components: {
-      inicio,
+      reserva,
     },
   }
 </script>
